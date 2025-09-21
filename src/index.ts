@@ -19,7 +19,7 @@ const main = async () => {
 
 		await yahooStuff.usTrending();
 		await yahooStuff.compareTrending(trendingList, tickerList);
-		await analyzeTickers(tickerList); // Add this line
+		await analyzeTickers(tickerList);
 		await yahooStuff.getMarketData(tickers);
 		return;
 	}

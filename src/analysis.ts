@@ -73,6 +73,7 @@ const flattenedMarketData = marketDataParsed
 		shortName: item.shortName || 'N/A',
 		symbol: item.symbol || 'N/A',
 		regularMarketPrice: item.regularMarketPrice || 0,
+		fiftyTwoWeekChangePercent: item.fiftyTwoWeekChangePercent || 0,
 		currency: item.currency || 'USD',
 	}));
 
@@ -88,4 +89,19 @@ if (highestMarketPrice.length > 0 && highestMarketPrice[0]) {
 	console.log(
 		`Highest regular market price: ${record.shortName} (${record.symbol}): $${record.regularMarketPrice}`
 	);
+
+	const highest52WeekChange = marketDataDF
+		.sort('fiftyTwoWeekChangePercent', true)
+		.select('shortName', 'symbol', 'fiftyTwoWeekChangePercent')
+		.head(1)
+		.toRecords();
+	if (highest52WeekChange.length > 0 && highest52WeekChange[0]) {
+		const record = highest52WeekChange[0];
+		console.log(
+			`Highest 52-week change percent: ${record.shortName} (${
+				record.symbol
+				// @ts-ignore linting error
+			}): ${Math.round(record.fiftyTwoWeekChangePercent, 2)}%`
+		);
+	}
 }
