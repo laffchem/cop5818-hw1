@@ -1,0 +1,101 @@
+name,ticker,has_intraday,has_eod,exchange_name,exchange_acronym,exchange_mic
+Microsoft Corporation,MSFT,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Apple Inc,AAPL,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Amazon.com Inc,AMZN,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Alphabet Inc - Class C,GOOG,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Alphabet Inc - Class A,GOOGL,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Alibaba Group Holding Ltd,BABA,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+ProShares S&P 500 Dynamic Buffer ETF,FB,false,true,CBOE BZX U.S. EQUITIES EXCHANGE,BATS,BATS
+BERKSHIRE HATHAWAY INC,BRK.B,false,false,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+BERKSHIRE HATHAWAY INC,BRK.A,false,false,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Vodafone Group plc,VOD,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Visa Inc - Class A,V,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+JPMorgan Chase & Company,JPM,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Johnson & Johnson,JNJ,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Walmart Inc,WMT,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Mastercard Incorporated - Class A,MA,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Procter & Gamble Company,PG,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Taiwan Semiconductor Manufacturing,TSM,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Chunghwa Telecom,CHT,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Roche Holding AG,RHHBF,false,true,OTC LINK ATS - OTC MARKETS,"",OTCM
+Roche Holding AG,RHHVF,false,true,OTC LINK ATS - OTC MARKETS,"",OTCM
+AT&T Inc,T,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Unitedhealth Group Inc,UNH,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Bank Of America Corp,BAC,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Home Depot Inc,HD,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Intel Corp,INTC,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Coca-Cola Company,KO,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Verizon Communications Inc,VZ,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Roche Holding AG,RHHBY,false,true,OTC LINK ATS - OTC MARKETS,"",OTCM
+Exxon Mobil Corp,XOM,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Walt Disney Co (The),DIS,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Merck & Co Inc,MRK,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Novartis AG,NVS,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Comcast Corp - Class A,CMCSA,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Pfizer Inc,PFE,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+PepsiCo Inc,PEP,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Toyota Motor Corporation,TM,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Chevron Corp,CVX,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Adobe Inc,ADBE,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Cisco Systems Inc,CSCO,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Wells Fargo & Company,WFC,true,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+NVIDIA Corp,NVDA,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Netflix Inc,NFLX,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Oracle Corp,ORCL,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Boeing Company,BA,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Salesforce Inc,CRM,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Sap SE,SAP,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+McDonald`s Corp,MCD,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Nike Inc - Class B,NKE,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Abbott Laboratories,ABT,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Citigroup Inc,C,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Medtronic Plc,MDT,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+HSBC Holdings plc,HSBC,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Tesla Inc,TSLA,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Costco Wholesale Corp,COST,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Bristol-Myers Squibb Company,BMY,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+PayPal Holdings Inc,PYPL,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Philip Morris International Inc,PM,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+NextEra Energy Inc,NEE,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Abbvie Inc,ABBV,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Lilly(Eli) & Company,LLY,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+AMGEN Inc,AMGN,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Sanofi,SNY,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Thermo Fisher Scientific Inc,TMO,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+ASML Holding NV,ASML,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Astrazeneca plc,AZN,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Accenture plc - Class A,ACN,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+International Business Machines Corp,IBM,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Honeywell International Inc,HON,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+TotalEnergies SE,TOT,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Broadcom Inc,AVGO,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Texas Instruments Inc,TXN,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Novo Nordisk,NVO,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Union Pacific Corp,UNP,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Royal Bank Of Canada,RY,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+BP plc,BP,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Lockheed Martin Corp,LMT,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+American Tower Corp,AMT,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Linde Plc.,LIN,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+GSK Plc,GSK,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Danaher Corp,DHR,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Charter Communications Inc - Class A,CHTR,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+HDFC Bank Ltd,HDB,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+General Electric Company,GE,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Starbucks Corp,SBUX,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Anheuser-Busch InBev SA/NV,BUD,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Gilead Sciences Inc,GILD,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Toronto Dominion Bank,TD,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Sinopec Shanghai Petrochemical Co. Ltd,SHI,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Qualcomm Inc,QCOM,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+American Express Company,AXP,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Fidelity National Information Services Inc,FIS,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+British American Tobacco Plc,BTI,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+3M Company,MMM,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Lowe`s Cos. Inc,LOW,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+Diageo plc,DEO,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+ROYAL DUTCH SHELL ADR EA REP 2 CL'B' EUR0.07,RDS.B,false,false,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+CVS Health Corp,CVS,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS
+T-Mobile US Inc,TMUS,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+Mondelez International Inc - Class A,MDLZ,false,true,NASDAQ - ALL MARKETS,NASDAQ,XNAS
+United Parcel Service Inc - Class B,UPS,false,true,"NEW YORK STOCK EXCHANGE, INC.",NYSE,XNYS

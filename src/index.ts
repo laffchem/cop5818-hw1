@@ -1,28 +1,31 @@
 import 'dotenv/config';
-import { writeJSONToFile } from './util.js';
+import { writeJSONToFile, fetchTickers, fileExists } from './util.js';
+import { YahooStuff } from './yfinance.js';
+import { analyzeTickers } from './analysis.js';
+import fs from 'fs/promises';
 
 const listUrl = 'http://api.marketstack.com/v2/tickerslist';
-
-const fetchTickers = async () => {
-	const params = new URLSearchParams({
-		access_key: process.env.API_KEY as string,
-		limit: '100',
-	});
-
-	const data = await fetch(`${listUrl}?${params}`, {
-		method: 'GET',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-	});
-	const json = await data.json();
-	return json;
-};
+const tickerList = './data/tickers.json';
+const trendingList = './data/trending.txt';
 
 const main = async () => {
 	const filename = 'tickers.json';
-	const tickers = await fetchTickers();
+	if (await fileExists(`./data/${filename}`)) {
+		// console.log(`${filename} already exists. Exiting...`);
+		const tickers = JSON.parse(await fs.readFile(tickerList, 'utf-8')).data.map(
+			(item: any) => item.ticker
+		);
+		const yahooStuff = new YahooStuff(tickers);
+
+		await yahooStuff.usTrending();
+		await yahooStuff.compareTrending(trendingList, tickerList);
+		await analyzeTickers(tickerList); // Add this line
+		await yahooStuff.getMarketData(tickers);
+		return;
+	}
+	const tickers = await fetchTickers(listUrl);
 	await writeJSONToFile(tickers, filename);
+	await analyzeTickers(tickerList);
 };
 
 await main();

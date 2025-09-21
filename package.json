@@ -16,6 +16,8 @@
 		"@types/node": "^24.3.3"
 	},
 	"dependencies": {
-		"dotenv": "^17.2.2"
+		"dotenv": "^17.2.2",
+		"nodejs-polars": "^0.21.2",
+		"yahoo-finance2": "^2.13.3"
 	}
 }
