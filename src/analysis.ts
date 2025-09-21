@@ -51,8 +51,18 @@ export const analyzeTickers = async (filepath: string) => {
 	console.log(
 		`Number of tickers with neither intraday nor end-of-day data: ${neitherCount}`
 	);
+
+	// Count of tickers per exchange, sorted descending
+	const exchangeCounts = data
+		.filter(pl.col('exchange_acronym').isNotNull())
+		.groupBy('exchange_acronym')
+		.agg(pl.len().alias('count'))
+		.sort('count', true);
+
+	console.log(exchangeCounts.toString());
 };
 
+// Analyze market data for highest regular market price
 const marketData = await fs.readFile('./data/market_data.json', 'utf-8');
 const marketDataParsed = JSON.parse(marketData);
 
