@@ -1,7 +1,8 @@
 import yahooFinance from 'yahoo-finance2';
 import fs from 'fs/promises';
-import { fileExists } from './util.js'; // Use your existing fileExists function
+import { fileExists } from './util.js';
 
+// Made this into a class specifically for the requirement...
 export class YahooStuff {
 	constructor(public tickers: string[]) {
 		this.tickers = tickers;
@@ -10,7 +11,7 @@ export class YahooStuff {
 	usTrending = async () => {
 		const trending = await yahooFinance.trendingSymbols('US');
 		if (await fileExists('./data/trending.txt')) {
-			console.log('trending.txt already exists. Exiting...');
+			// console.log('trending.txt already exists. Exiting...');
 			return;
 		}
 		for (const symbol of trending.quotes) {
@@ -19,11 +20,11 @@ export class YahooStuff {
 		}
 	};
 
-	getMarketData = async (tickers: string[]): Promise<any> => {
-		// did this to satisfy the requirement.
+	getMarketData = async (tickers: string[]) => {
+		// Made this into a Set for the assignment requirement
 		const data = new Set(tickers);
 		const tickerArray = Array.from(data);
-		const results = [];
+		let results = [];
 		if (!(await fileExists('./data/market_data.json'))) {
 			for (const ticker of tickerArray) {
 				try {
@@ -38,6 +39,13 @@ export class YahooStuff {
 				}
 			}
 			await fs.writeFile('./data/market_data.json', JSON.stringify(results));
+		} else {
+			// Load existing market data
+			const existingData = await fs.readFile(
+				'./data/market_data.json',
+				'utf-8'
+			);
+			results = JSON.parse(existingData);
 		}
 		return results;
 	};
@@ -55,7 +63,6 @@ export class YahooStuff {
 
 		const outputPath = './data/tickers_trending_from_dataset.txt';
 
-		// Check if file exists, if not, write it
 		if (!(await fileExists(outputPath))) {
 			await fs.writeFile(outputPath, common.join('\n'));
 			console.log(
